@@ -6,7 +6,9 @@
       </div>
       <div class="list">
         <RouterLink class="nav-link" :to="{ name: 'home' }">Home</RouterLink>
-        <RouterLink class="nav-link" :to="{name: 'project'}">Project</RouterLink>
+        <RouterLink class="nav-link" :to="{ name: 'project' }"
+          >Project</RouterLink
+        >
       </div>
       <div class="contact">
         <RouterLink :to="{ name: 'contact' }" class="nav-contact"
