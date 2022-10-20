@@ -5,7 +5,7 @@
         <img src="../assets/logo.png" alt="" />
       </div>
       <div class="list">
-        <RouterLink class="nav-link" :to="{ name: 'desc' }">Home</RouterLink>
+        <RouterLink class="nav-link" :to="{ name: 'home' }">Home</RouterLink>
         <RouterLink class="nav-link" :to="{name: 'project'}">Project</RouterLink>
       </div>
       <div class="contact">
