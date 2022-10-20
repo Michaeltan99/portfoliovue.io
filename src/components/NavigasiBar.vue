@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
   <div class="nav">
     <div class="content">
@@ -9,8 +5,8 @@
         <img src="../assets/logo.png" alt="" />
       </div>
       <div class="list">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#projects" class="nav-link">Projects</a>
+        <RouterLink class="nav-link" :to="{ name: 'desc' }">Home</RouterLink>
+        <RouterLink class="nav-link" :to="{name: 'project'}">Project</RouterLink>
       </div>
       <div class="contact">
         <RouterLink :to="{ name: 'contact' }" class="nav-contact"
@@ -22,48 +18,49 @@
 </template>
 
 <style scoped>
-.nav{
+.nav {
   position: fixed;
   width: 100%;
   border: 1px solid black;
   height: 110px;
   background-color: #000000;
+  top: 0;
 }
-.content{
+.content {
   display: flex;
   padding-top: 40px;
   justify-content: space-around;
-  color: #D2001A;
+  color: #d2001a;
   align-items: center;
 }
-.logo img{
+.logo img {
   width: 50px;
   height: 50px;
 }
-.list{
+.list {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: black;
   padding: 10px;
   color: #ffff;
 }
-.nav-link:hover{
-  background-color: #D2001A;
+.nav-link:hover {
+  background-color: #d2001a;
   transition: 0.8s all;
 }
 
-.nav-contact{
+.nav-contact {
   text-decoration: none;
   color: black;
   padding: 10px;
   color: #ffff;
 }
-.nav-contact:hover{
-  background-color: #D2001A;
+.nav-contact:hover {
+  background-color: #d2001a;
   transition: 0.8s all;
 }
 </style>

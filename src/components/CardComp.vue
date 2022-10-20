@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <ImageComp class="gambarcard" :src="data.img"/>
+    <ImageComp :src="data.img"/>
     <h1>{{data.title}}</h1>
 </template>
 

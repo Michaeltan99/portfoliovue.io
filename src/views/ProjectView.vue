@@ -26,8 +26,6 @@ export default {
           <RouterLink :to="{ name: 'detail', params: { id: img.slug } }">
             <BaseCard class="gambar" :data="img" />
           </RouterLink>
-          <div class="desc">
-          </div>
         </div>
       </template>
     </div>
@@ -36,10 +34,11 @@ export default {
 
 <style>
 .project {
-  border: 1px solid black;
+  border: 1px solid #000000;
   width: 90%;
   margin-left: 5%;
   min-height: 100vh;
+  padding-top: 110px;
 }
 .title {
   text-transform: uppercase;
@@ -47,16 +46,16 @@ export default {
   color: white;
   margin-bottom: 20px;
 }
-.sub-project{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: auto;
+.sub-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: auto;
 }
 .konten:hover {
   box-shadow: 0 2px 2px 0 rgba(239, 43, 43, 0.822),
     0 6px 20px 0 rgba(155, 27, 27, 0.86);
-    transition: 0.8s all;
+  transition: 0.8s all;
 }
 .gambar {
   width: 300px;
