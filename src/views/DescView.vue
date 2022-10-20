@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: "DescView",
-};
-</script>
-
 <template>
   <div class="isi" id="home">
     <div class="sub-isi">

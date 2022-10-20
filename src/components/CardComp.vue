@@ -8,20 +8,24 @@ export default {
   },
   components: {
     ImageComp,
-},
+  },
 };
 </script>
 
 <template>
-    <ImageComp :src="data.img"/>
-    <h1>{{data.title}}</h1>
+  <div class="card">
+    <ImageComp :src="data.img" />
+    <h1>{{ data.title }}</h1>
+  </div>
 </template>
 
 <style>
-h1{
+h1 {
   margin-top: 30px;
   color: #d2001a;
   text-align: center;
 }
+.card{
+  padding: 30px;
+}
 </style>
-

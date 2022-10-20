@@ -1,12 +1,12 @@
 <script>
-import BaseProject from '../views/ProjectView.vue'
 import DescView from '../views/DescView.vue'
+import BaseProject from '../views/ProjectView.vue'
 
 export default {
   name: "HomePage",
   components:{
-    BaseProject,
     DescView,
+    BaseProject
   },
 };
 </script>

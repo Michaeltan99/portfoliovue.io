@@ -24,7 +24,7 @@ export default {
       <template v-for="(img, index) in g$list" :key="index">
         <div class="konten">
           <RouterLink :to="{ name: 'detail', params: { id: img.slug } }">
-            <BaseCard class="gambar" :data="img" />
+              <BaseCard :data="img"/>
           </RouterLink>
         </div>
       </template>
